@@ -1,4 +1,38 @@
-*.log
-*.pot
-*.pyc
-local_settings.py
+##  Virtualenv  ##  
+.Python
+include
+
+##  Python Packages  ##  
+*.egg
+*.egg-info
+bin
+build
+dist
+sdist
+eggs
+parts
+var
+develop-eggs
+.installed.cfg
+
+##  Pip  ##  
+pip-log.txt
+
+##  Unit test / coverage  ##  
+.coverage
+.tox
+nose_exclude.txt
+
+##  Mac OS X  ##  
+.DS_Store
+
+
+##  Generated files  ##  
+*.[oa]
+*.py[co]
+*.rbc
+
+
+##  Ropy  ##  
+.ropeproject/
+**/.ropeproject/
