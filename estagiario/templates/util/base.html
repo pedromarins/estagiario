@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>{% block title %}Skeleton{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="{{STATIC_URL}}images/favicon.ico" />
+
+
+    <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/style.css" />    
+    {% block head_css %}{% endblock %}
+
+</head>
+
+<body>
+
+  
+    {% include "util/header.html" %}
+
+    <div id="main" role="main">
+        {% block main %}{% endblock %}
+    </div>
+
+  
+    {% include "util/footer.html" %}
+  
+
+
+    <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{{ STATIC_URL }}js/jquery.js">\x3C/script>');
+    </script>
+    
+    <!-- Additional JavaScript libraries and plugins... -->
+    {% block js %}{% endblock %}
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+  <!-- Prompt IE < 8 users to install Chrome Frame.  -->
+  <!--[if lt IE 8 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+    
+    {% block body_bottom_js %}
+    {% endblock body_bottom_js %}
+
+</body>
+</html>
