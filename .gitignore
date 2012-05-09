@@ -36,3 +36,7 @@ nose_exclude.txt
 ##  Ropy  ##  
 .ropeproject/
 **/.ropeproject/
+
+
+## Compass
+**/.sass-cache/
