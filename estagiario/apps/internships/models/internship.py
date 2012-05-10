@@ -3,6 +3,8 @@
 from django.db import models
 from model_utils import Choices
 from model_utils.models import TimeStampedModel
+from taggit.managers import TaggableManager
+
 
 class Internship(TimeStampedModel):
     COMPANY_SIZES = Choices(
@@ -14,13 +16,14 @@ class Internship(TimeStampedModel):
     role            = models.CharField('Cargo', max_length=64)
     field           = models.ForeignKey('internships.Field')
     description     = models.TextField('Descrição')
+    tags = TaggableManager()
 
     company_name    = models.CharField('Empresa', max_length=64)
     company_url     = models.URLField('Site')
     company_img     = models.ImageField('Logo', upload_to='company_logos', null=True)
     company_size    = models.CharField(choices=COMPANY_SIZES, default=COMPANY_SIZES.peq, max_length=5)
 
-    weekly_hours    = models.PositiveSmallIntegerField('Carga horária', choices=[(4,'4'), (6, '6')])
+    weekly_hours    = models.PositiveSmallIntegerField('Carga horária', choices=[(20,'20'), (25, '25'), (30, '30')])
     salary          = models.DecimalField('Salário', max_digits=7, decimal_places=2, null=True)
 
     expiration      = models.DateField('Data de expiração')
