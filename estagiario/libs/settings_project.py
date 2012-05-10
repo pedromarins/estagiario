@@ -6,7 +6,7 @@
 FACEBOOK_EXTENDED_PERMISSIONS = [    
     'email',
     'publish_stream', 
-    'user_location'             'friends_location',
+    'user_location',            'friends_location',
     'user_work_history'         'friends_work_history',    
     'user_education_history',   'friends_education_history',
 ]
