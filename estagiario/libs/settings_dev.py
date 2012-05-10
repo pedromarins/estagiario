@@ -7,7 +7,7 @@ SITE_ID = 1
 
 DEBUG = True
 TEMPLATE_DEBUG = True
-
+SERVE_MEDIA = True
 
 ##########################
 ##        ASSETS        ##
