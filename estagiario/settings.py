@@ -106,7 +106,4 @@ elif ENV == 'staging':
 else:
     from libs.settings_dev import *
 
-
-
-
-
+from libs.settings_project import *
