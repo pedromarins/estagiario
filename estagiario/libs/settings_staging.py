@@ -43,3 +43,8 @@ EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
 EMAIL_HOST_PASSWORD = os.environ['SENDGRID_PASSWORD']
 
 DEFAULT_FROM_EMAIL = 'Prova Essa <contato@estagiar.io>'
+
+
+# Estagiar.io Teste
+FACEBOOK_APP_ID = '397248523631923'
+FACEBOOK_API_SECRET = 'fcc8abf3f2ff4819b13846bccec20f55'

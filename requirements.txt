@@ -17,3 +17,8 @@ newrelic==1.2.1.265
 python-dateutil==1.5
 wsgiref==0.1.2
 psycopg2==2.4.4
+certifi==0.0.8
+facepy==0.6.8
+fandjango==4.0.6
+requests==0.8.9
+django-taggit==0.9.3

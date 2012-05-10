@@ -55,6 +55,20 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.contrib.messages.context_processors.messages',
+    'social_auth.context_processors.social_auth_by_type_backends',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -70,6 +84,8 @@ INSTALLED_APPS = (
     #'south',
     'django_extensions',
     'envelope',
+    'social_auth',
+    'taggit',
 
 
     'core',
@@ -88,4 +104,8 @@ elif ENV == 'staging':
 
 else:
     from libs.settings_dev import *
+
+
+
+
 

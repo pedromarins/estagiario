@@ -16,8 +16,7 @@ STATIC_ROOT = get_path('static_root')
 STATIC_URL = '/static/'
 MEDIA_ROOT = get_path('media')
 MEDIA_URL = '/media/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
-
+ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"  
 
 
 DATABASES = { 'default': { 'ENGINE': 'django.db.backends.sqlite3',
@@ -60,3 +59,7 @@ DATABASES = {
 }
 
 
+
+# Estagiar.io Teste
+FACEBOOK_APP_ID = '397248523631923'
+FACEBOOK_API_SECRET = 'fcc8abf3f2ff4819b13846bccec20f55'
