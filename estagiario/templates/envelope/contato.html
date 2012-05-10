@@ -1,0 +1,45 @@
+{% extends "util/base.html" %}
+
+{% load i18n %}
+{% load honeypot %}
+
+{% block main %}
+	<section id="contact">
+		
+		<form id="contato" action="{% url envelope-contact %}" method="POST">
+			{% csrf_token %}
+			{% render_honeypot_field %}
+			
+			<span></span>
+			<li>
+				<label>Email de contato:</label>
+				<p>contato@estagiar.io</p>
+			</li>
+			<li class="half">
+				<label for="id_sender">REMETENTE:</label>
+				<input class="radius" id="id_sender" type="text" name="sender"  maxlength="70" 
+				value="{% if form.sender.value %}{{form.sender.value}}{% endif %}" />
+			</li>
+			<li class="half">
+				<label for="id_email">EMAIL:</label>
+				<input class="radius" type="text" name="email" id="id_email"
+				value="{% if form.email.value %}{{form.email.value}}{% endif %}" />
+			</li>
+			<li class="select half">
+				<label for="id_category">{{form.category.label}}:</label>
+				{{form.category}}
+			</li>
+			<li class="half">
+				<label for="id_subject">ASSUNTO:</label>
+				<input class="radius" id="id_subject" type="text" name="subject" maxlength="127" />
+			</li>
+			<li>
+				<label for="id_message">MENSAGEM:</label>
+				<textarea class="radius" id="id_message" rows="10" cols="40" name="message"></textarea>
+			</li>
+			<span></span>
+			<input class="button big background radius" type="submit" value="ENVIAR" />
+		</form>
+
+	</section>
+{% endblock main %}

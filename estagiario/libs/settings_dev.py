@@ -15,7 +15,7 @@ TEMPLATE_DEBUG = True
 STATIC_ROOT = get_path('static_root')
 STATIC_URL = '/static/'
 MEDIA_ROOT = get_path('media')
-#MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + "admin/"
 
 

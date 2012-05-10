@@ -1,0 +1,7 @@
+Remetente: {{ sender }} ({{ email }})
+
+Categoria: {{ category }}
+
+Mensagem:
+
+{{ message }}

@@ -66,8 +66,14 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'gunicorn',
+    'newrelic',
+    #'south',
+    'django_extensions',
+    'envelope',
+
 
     'core',
+    'address',
     'internships'
 )
 

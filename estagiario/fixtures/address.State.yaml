@@ -1,0 +1,81 @@
+- fields: {name: Acre, uf: ac}
+  model: address.state
+  pk: 1
+- fields: {name: Amazonas, uf: am}
+  model: address.state
+  pk: 2
+- fields: {name: Alagoas, uf: al}
+  model: address.state
+  pk: 3
+- fields: {name: "Cear\xE1", uf: ce}
+  model: address.state
+  pk: 4
+- fields: {name: "Amap\xE1", uf: ap}
+  model: address.state
+  pk: 5
+- fields: {name: "Goi\xE1s", uf: go}
+  model: address.state
+  pk: 6
+- fields: {name: "Esp\xEDrito Santo", uf: es}
+  model: address.state
+  pk: 7
+- fields: {name: "Paran\xE1", uf: pr}
+  model: address.state
+  pk: 8
+- fields: {name: Roraima, uf: rr}
+  model: address.state
+  pk: 9
+- fields: {name: Rio Grande do Sul, uf: rs}
+  model: address.state
+  pk: 10
+- fields: {name: "Para\xEDba", uf: pb}
+  model: address.state
+  pk: 11
+- fields: {name: Tocantins, uf: to}
+  model: address.state
+  pk: 12
+- fields: {name: "Par\xE1", uf: pa}
+  model: address.state
+  pk: 13
+- fields: {name: Pernambuco, uf: pe}
+  model: address.state
+  pk: 14
+- fields: {name: Rio Grande do Norte, uf: rn}
+  model: address.state
+  pk: 15
+- fields: {name: "Rond\xF4nia", uf: ro}
+  model: address.state
+  pk: 16
+- fields: {name: Rio de Janeiro, uf: rj}
+  model: address.state
+  pk: 17
+- fields: {name: Bahia, uf: ba}
+  model: address.state
+  pk: 18
+- fields: {name: Distrito Federal, uf: df}
+  model: address.state
+  pk: 19
+- fields: {name: Minas Gerais, uf: mg}
+  model: address.state
+  pk: 20
+- fields: {name: "Piau\xED", uf: pi}
+  model: address.state
+  pk: 21
+- fields: {name: "Maranh\xE3o", uf: ma}
+  model: address.state
+  pk: 22
+- fields: {name: "S\xE3o Paulo", uf: sp}
+  model: address.state
+  pk: 23
+- fields: {name: Mato Grosso, uf: mt}
+  model: address.state
+  pk: 24
+- fields: {name: Mato Grosso do Sul, uf: ms}
+  model: address.state
+  pk: 25
+- fields: {name: Santa Catarina, uf: sc}
+  model: address.state
+  pk: 26
+- fields: {name: Sergipe, uf: se}
+  model: address.state
+  pk: 27
