@@ -62,11 +62,53 @@ header
 	li
 		float: left
 		border-right: 1px solid #24304F
-		height: 43px
-		line-height: 43px
+		padding: 0 8px
+	li:first-child
+		border-left: 1px solid #24304F
+	span
+		width: 30px
+		height: 32px
+		display: inline-block		
+	.engenharia
+		background: url(../images/icones/engenharia.png) no-repeat -10px 6px
+	li:hover .engenharia
+		background: url(../images/icones/engenharia.png) no-repeat -40px 6px
+	.direito
+		background: url(../images/icones/direito.png) no-repeat -10px 6px
+	li:hover .direito
+		background: url(../images/icones/direito.png) no-repeat -40px 6px
+	.administracao
+		background: url(../images/icones/administracao.png) no-repeat -10px 6px
+	li:hover .administracao
+		background: url(../images/icones/administracao.png) no-repeat -40px 6px
+	.economia
+		background: url(../images/icones/economia.png) no-repeat -10px 6px
+	li:hover .economia
+		background: url(../images/icones/economia.png) no-repeat -40px 6px
+	.programacao
+		background: url(../images/icones/programacao.png) no-repeat -10px 6px
+	li:hover .programacao
+		background: url(../images/icones/programacao.png) no-repeat -40px 6px
+	.design
+		background: url(../images/icones/design.png) no-repeat -10px 6px
+	li:hover .design
+		background: url(../images/icones/design.png) no-repeat -40px 6px
+	.publicidade
+		background: url(../images/icones/publicidade.png) no-repeat -10px 6px
+	li:hover .publicidade
+		background: url(../images/icones/publicidade.png) no-repeat -40px 6px
+	.outros
+		background: url(../images/icones/outros.png) no-repeat -10px 6px
+	li:hover .outros
+		background: url(../images/icones/outros.png) no-repeat -40px 6px
 	a
 		color: #FFFFFF
-	a:hover
+		display: block
+		vertical-align: top
+		height: 43px
+		line-height: 43px
+		cursor: pointer
+	li:hover a
 		color: $verde
 
 /**************************************** publish ****************************************/
@@ -91,9 +133,12 @@ header
 
 /**************************************** footer ****************************************/
 footer
-	height: 130px
+	height: 70px
+	padding: 30px 0
 	@include background
 	.sparkit
+		color: #FFFFFF
+		+text-shadow(0 1px 0 #000000)
 		float: right
 		text-align: center
 		font-size: 14px
