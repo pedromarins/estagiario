@@ -40,3 +40,6 @@ nose_exclude.txt
 
 ## Compass
 **/.sass-cache/
+**/static/.sass-cache/
+
+db.sqlite
