@@ -65,40 +65,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*************************************** sass *************************************** */
 /*************************************** body *************************************** */
-/* line 17, ../sass/style.sass */
+/* line 19, ../sass/style.sass */
 body {
+  background: url(../images/background.jpg);
   font-family: Tahoma, sans-serif;
   font-size: 14px;
 }
 
-/* line 21, ../sass/style.sass */
+/* line 24, ../sass/style.sass */
 .centered {
   margin: 0 auto;
   width: 980px;
 }
 
-/* line 25, ../sass/style.sass */
+/* line 28, ../sass/style.sass */
 a {
   text-decoration: none;
 }
 
-/* line 27, ../sass/style.sass */
+/* line 30, ../sass/style.sass */
 a:hover {
   text-decoration: underline;
 }
 
 /*************************************** header *************************************** */
-/* line 32, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 header {
   background: url(../images/background-header.jpg);
   height: 175px;
   width: 100%;
 }
-/* line 36, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
+header .fb-login {
+  background: url(../images/facebook-btn.png);
+  color: white;
+  float: right;
+  height: 38px;
+  line-height: 38px;
+  margin: 25px 0;
+  width: 160px;
+  padding: 0 0 0 42px;
+  font-size: 13px;
+  text-decoration: none;
+}
+/* line 50, ../sass/style.sass */
 header h1 {
   display: inline-block;
 }
-/* line 38, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 header h1 a {
   background: url(../images/logo.png);
   display: block;
@@ -107,16 +121,16 @@ header h1 a {
   width: 447px;
   text-indent: -9999px;
 }
-/* line 45, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 header .menu {
   list-style: none;
   font-family: "Patua One", cursive;
 }
-/* line 48, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 header .menu li {
   float: left;
 }
-/* line 50, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 header .menu a {
   color: #3c5591;
   text-shadow: 0 1px 0 white;
@@ -124,9 +138,8 @@ header .menu a {
 }
 
 /*************************************** fields *************************************** */
-/* line 56, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 .fields {
-  font-family: "Patua One", cursive;
   height: 43px;
   width: 100%;
   border-bottom: 7px solid #24304f;
@@ -140,88 +153,89 @@ header .menu a {
   -webkit-box-shadow: 0px -1px 20px -4px black;
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
+  font-family: "Patua One", cursive;
 }
-/* line 62, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 .fields li {
   float: left;
   border-right: 1px solid #24304f;
-  padding: 0 8px;
+  padding: 0 10px 0 6px;
 }
-/* line 66, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 .fields li:first-child {
   border-left: 1px solid #24304f;
 }
-/* line 68, ../sass/style.sass */
+/* line 82, ../sass/style.sass */
 .fields span {
   width: 30px;
   height: 32px;
   display: inline-block;
 }
-/* line 72, ../sass/style.sass */
+/* line 86, ../sass/style.sass */
 .fields .engenharia {
   background: url(../images/icones/engenharia.png) no-repeat -10px 6px;
 }
-/* line 74, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 .fields li:hover .engenharia {
   background: url(../images/icones/engenharia.png) no-repeat -40px 6px;
 }
-/* line 76, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 .fields .direito {
   background: url(../images/icones/direito.png) no-repeat -10px 6px;
 }
-/* line 78, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 .fields li:hover .direito {
   background: url(../images/icones/direito.png) no-repeat -40px 6px;
 }
-/* line 80, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 .fields .administracao {
   background: url(../images/icones/administracao.png) no-repeat -10px 6px;
 }
-/* line 82, ../sass/style.sass */
+/* line 96, ../sass/style.sass */
 .fields li:hover .administracao {
   background: url(../images/icones/administracao.png) no-repeat -40px 6px;
 }
-/* line 84, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 .fields .economia {
   background: url(../images/icones/economia.png) no-repeat -10px 6px;
 }
-/* line 86, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 .fields li:hover .economia {
   background: url(../images/icones/economia.png) no-repeat -40px 6px;
 }
-/* line 88, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 .fields .programacao {
   background: url(../images/icones/programacao.png) no-repeat -10px 6px;
 }
-/* line 90, ../sass/style.sass */
+/* line 104, ../sass/style.sass */
 .fields li:hover .programacao {
   background: url(../images/icones/programacao.png) no-repeat -40px 6px;
 }
-/* line 92, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 .fields .design {
   background: url(../images/icones/design.png) no-repeat -10px 6px;
 }
-/* line 94, ../sass/style.sass */
+/* line 108, ../sass/style.sass */
 .fields li:hover .design {
   background: url(../images/icones/design.png) no-repeat -40px 6px;
 }
-/* line 96, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 .fields .publicidade {
   background: url(../images/icones/publicidade.png) no-repeat -10px 6px;
 }
-/* line 98, ../sass/style.sass */
+/* line 112, ../sass/style.sass */
 .fields li:hover .publicidade {
   background: url(../images/icones/publicidade.png) no-repeat -40px 6px;
 }
-/* line 100, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 .fields .outros {
   background: url(../images/icones/outros.png) no-repeat -10px 6px;
 }
-/* line 102, ../sass/style.sass */
+/* line 116, ../sass/style.sass */
 .fields li:hover .outros {
   background: url(../images/icones/outros.png) no-repeat -40px 6px;
 }
-/* line 104, ../sass/style.sass */
+/* line 118, ../sass/style.sass */
 .fields a {
   color: white;
   display: block;
@@ -230,27 +244,64 @@ header .menu a {
   line-height: 43px;
   cursor: pointer;
 }
-/* line 111, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 .fields li:hover a {
   color: #c0ff00;
+  text-decoration: none;
+}
+
+/*************************************** content *************************************** */
+/* line 130, ../sass/style.sass */
+.content {
+  padding: 50px 0;
+  min-height: 150px;
+  font-size: 12px;
+}
+/* line 134, ../sass/style.sass */
+.content aside {
+  width: 240px;
+  float: left;
+  margin: 0 0 50px;
+}
+/* line 138, ../sass/style.sass */
+.content aside h3 {
+  font-family: "Patua One", cursive;
+  color: #3a63ac;
+  font-size: 18px;
+}
+/* line 142, ../sass/style.sass */
+.content aside ul {
+  margin: 10px 0 40px 10px;
+}
+/* line 144, ../sass/style.sass */
+.content aside li {
+  margin: 0 0 3px;
+  font-weight: bold;
+}
+/* line 147, ../sass/style.sass */
+.content section {
+  width: 700px;
+  float: right;
+  margin: 0 0 50px;
 }
 
 /*************************************** publish *************************************** */
-/* line 115, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 .publish {
+  clear: both;
   background: #30416a;
   height: 75px;
   line-height: 75px;
   width: 100%;
   font-family: "Patua One", cursive;
 }
-/* line 121, ../sass/style.sass */
+/* line 162, ../sass/style.sass */
 .publish p {
   color: white;
   font-size: 26px;
   text-shadow: 0 1px 0 black;
 }
-/* line 125, ../sass/style.sass */
+/* line 166, ../sass/style.sass */
 .publish p a {
   background: #c0ff00;
   color: black;
@@ -268,7 +319,7 @@ header .menu a {
 }
 
 /*************************************** footer *************************************** */
-/* line 135, ../sass/style.sass */
+/* line 176, ../sass/style.sass */
 footer {
   height: 70px;
   padding: 30px 0;
@@ -283,7 +334,7 @@ footer {
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
 }
-/* line 139, ../sass/style.sass */
+/* line 180, ../sass/style.sass */
 footer .sparkit {
   color: white;
   text-shadow: 0 1px 0 black;
