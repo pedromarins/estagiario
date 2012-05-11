@@ -88,14 +88,19 @@ a:hover {
   text-decoration: underline;
 }
 
+/* line 33, ../sass/style.sass */
+strong {
+  font-weight: bold;
+}
+
 /*************************************** header *************************************** */
-/* line 35, ../sass/style.sass */
+/* line 38, ../sass/style.sass */
 header {
   background: url(../images/background-header.jpg);
   height: 175px;
   width: 100%;
 }
-/* line 39, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 header .fb-login {
   background: url(../images/facebook-btn.png);
   color: white;
@@ -108,11 +113,11 @@ header .fb-login {
   font-size: 13px;
   text-decoration: none;
 }
-/* line 50, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 header h1 {
   display: inline-block;
 }
-/* line 52, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 header h1 a {
   background: url(../images/logo.png);
   display: block;
@@ -121,16 +126,16 @@ header h1 a {
   width: 447px;
   text-indent: -9999px;
 }
-/* line 59, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 header .menu {
   list-style: none;
   font-family: "Patua One", cursive;
 }
-/* line 62, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 header .menu li {
   float: left;
 }
-/* line 64, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 header .menu a {
   color: #3c5591;
   text-shadow: 0 1px 0 white;
@@ -138,7 +143,7 @@ header .menu a {
 }
 
 /*************************************** fields *************************************** */
-/* line 70, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 .fields {
   height: 43px;
   width: 100%;
@@ -155,87 +160,87 @@ header .menu a {
   box-shadow: 0px -1px 20px -4px black;
   font-family: "Patua One", cursive;
 }
-/* line 76, ../sass/style.sass */
+/* line 79, ../sass/style.sass */
 .fields li {
   float: left;
   border-right: 1px solid #24304f;
   padding: 0 10px 0 6px;
 }
-/* line 80, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 .fields li:first-child {
   border-left: 1px solid #24304f;
 }
-/* line 82, ../sass/style.sass */
+/* line 85, ../sass/style.sass */
 .fields span {
   width: 30px;
   height: 32px;
   display: inline-block;
 }
-/* line 86, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 .fields .engenharia {
   background: url(../images/icones/engenharia.png) no-repeat -10px 6px;
 }
-/* line 88, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 .fields li:hover .engenharia {
   background: url(../images/icones/engenharia.png) no-repeat -40px 6px;
 }
-/* line 90, ../sass/style.sass */
+/* line 93, ../sass/style.sass */
 .fields .direito {
   background: url(../images/icones/direito.png) no-repeat -10px 6px;
 }
-/* line 92, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 .fields li:hover .direito {
   background: url(../images/icones/direito.png) no-repeat -40px 6px;
 }
-/* line 94, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 .fields .administracao {
   background: url(../images/icones/administracao.png) no-repeat -10px 6px;
 }
-/* line 96, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 .fields li:hover .administracao {
   background: url(../images/icones/administracao.png) no-repeat -40px 6px;
 }
-/* line 98, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 .fields .economia {
   background: url(../images/icones/economia.png) no-repeat -10px 6px;
 }
-/* line 100, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 .fields li:hover .economia {
   background: url(../images/icones/economia.png) no-repeat -40px 6px;
 }
-/* line 102, ../sass/style.sass */
+/* line 105, ../sass/style.sass */
 .fields .programacao {
   background: url(../images/icones/programacao.png) no-repeat -10px 6px;
 }
-/* line 104, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .fields li:hover .programacao {
   background: url(../images/icones/programacao.png) no-repeat -40px 6px;
 }
-/* line 106, ../sass/style.sass */
+/* line 109, ../sass/style.sass */
 .fields .design {
   background: url(../images/icones/design.png) no-repeat -10px 6px;
 }
-/* line 108, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .fields li:hover .design {
   background: url(../images/icones/design.png) no-repeat -40px 6px;
 }
-/* line 110, ../sass/style.sass */
+/* line 113, ../sass/style.sass */
 .fields .publicidade {
   background: url(../images/icones/publicidade.png) no-repeat -10px 6px;
 }
-/* line 112, ../sass/style.sass */
+/* line 115, ../sass/style.sass */
 .fields li:hover .publicidade {
   background: url(../images/icones/publicidade.png) no-repeat -40px 6px;
 }
-/* line 114, ../sass/style.sass */
+/* line 117, ../sass/style.sass */
 .fields .outros {
   background: url(../images/icones/outros.png) no-repeat -10px 6px;
 }
-/* line 116, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
 .fields li:hover .outros {
   background: url(../images/icones/outros.png) no-repeat -40px 6px;
 }
-/* line 118, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 .fields a {
   color: white;
   display: block;
@@ -243,50 +248,187 @@ header .menu a {
   height: 43px;
   line-height: 43px;
   cursor: pointer;
+  text-shadow: -1px -1px 0px black;
 }
-/* line 125, ../sass/style.sass */
+/* line 129, ../sass/style.sass */
 .fields li:hover a {
   color: #c0ff00;
   text-decoration: none;
 }
 
 /*************************************** content *************************************** */
-/* line 130, ../sass/style.sass */
+/* line 134, ../sass/style.sass */
 .content {
   padding: 50px 0;
   min-height: 150px;
   font-size: 12px;
 }
-/* line 134, ../sass/style.sass */
+/* line 138, ../sass/style.sass */
 .content aside {
   width: 240px;
   float: left;
   margin: 0 0 50px;
 }
-/* line 138, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .content aside h3 {
   font-family: "Patua One", cursive;
   color: #3a63ac;
   font-size: 18px;
 }
-/* line 142, ../sass/style.sass */
+/* line 146, ../sass/style.sass */
 .content aside ul {
   margin: 10px 0 40px 10px;
 }
-/* line 144, ../sass/style.sass */
+/* line 148, ../sass/style.sass */
 .content aside li {
   margin: 0 0 3px;
   font-weight: bold;
 }
-/* line 147, ../sass/style.sass */
+/* line 151, ../sass/style.sass */
 .content section {
   width: 700px;
   float: right;
   margin: 0 0 50px;
 }
+/* line 156, ../sass/style.sass */
+.content section .filters-orders .save-filters {
+  background: #989898;
+  color: white;
+  display: block;
+  float: right;
+  height: 23px;
+  line-height: 23px;
+  margin: 4px 0 0;
+  text-align: center;
+  width: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 0 0 black;
+  -moz-box-shadow: 1px 1px 0 0 black;
+  box-shadow: 1px 1px 0 0 black;
+}
+/* line 168, ../sass/style.sass */
+.content section .filters-orders .selected-filters {
+  background: #d1d0d1;
+  color: black;
+  height: 21px;
+  line-height: 21px;
+  width: 540px;
+  padding: 7px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 176, ../sass/style.sass */
+.content section .filters-orders .selected-filters p {
+  float: left;
+  margin: 0 10px 0 0;
+}
+/* line 179, ../sass/style.sass */
+.content section .filters-orders .selected-filters li {
+  background: #3a63ac;
+  color: white;
+  float: left;
+  margin: 0 3px;
+  padding: 0 8px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 186, ../sass/style.sass */
+.content section .filters-orders .selected-filters li a {
+  color: black;
+  margin: 0 0 0 6px;
+}
+/* line 189, ../sass/style.sass */
+.content section .filters-orders nav {
+  border-bottom: 4px solid #3a63ac;
+  display: inline-block;
+  margin: 20px 0;
+  padding: 0 0 4px;
+  width: 100%;
+}
+/* line 195, ../sass/style.sass */
+.content section .filters-orders nav li {
+  float: left;
+  list-style: none;
+  margin: 0 50px 0 0;
+}
+/* line 199, ../sass/style.sass */
+.content section .filters-orders nav li a {
+  color: black;
+}
+/* line 201, ../sass/style.sass */
+.content section .vacancies {
+  width: 710px;
+}
+/* line 203, ../sass/style.sass */
+.content section .vacancies li {
+  background: white;
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 15px 0;
+  width: 226px;
+  -webkit-box-shadow: 0px 0px 10px -4px black;
+  -moz-box-shadow: 0px 0px 10px -4px black;
+  box-shadow: 0px 0px 10px -4px black;
+}
+/* line 210, ../sass/style.sass */
+.content section .vacancies li a {
+  text-decoration: none;
+}
+/* line 212, ../sass/style.sass */
+.content section .vacancies li img {
+  padding: 0 15px 5px;
+}
+/* line 214, ../sass/style.sass */
+.content section .vacancies li h3 {
+  border-top: 1px solid #d1d0d1;
+  color: #3a63ac;
+  padding: 12px 15px 4px;
+  width: 196px;
+}
+/* line 219, ../sass/style.sass */
+.content section .vacancies li .company {
+  color: #757575;
+  padding: 0 15px 15px;
+}
+/* line 222, ../sass/style.sass */
+.content section .vacancies li p {
+  color: black;
+  padding: 0 15px 5px;
+}
+/* line 225, ../sass/style.sass */
+.content section .vacancies li .money-time {
+  color: #757575;
+  float: left;
+  margin: 10px 0 0;
+  width: 83px;
+}
+/* line 230, ../sass/style.sass */
+.content section .vacancies li .money-time span {
+  color: #3a63ac;
+  display: block;
+  font-size: 16px;
+  margin: 3px 0 0;
+  font-family: "Patua One", cursive;
+}
+/* line 236, ../sass/style.sass */
+.content section .vacancies li:hover {
+  -webkit-box-shadow: 0px 0px 10px -1px black;
+  -moz-box-shadow: 0px 0px 10px -1px black;
+  box-shadow: 0px 0px 10px -1px black;
+}
 
 /*************************************** publish *************************************** */
-/* line 155, ../sass/style.sass */
+/* line 245, ../sass/style.sass */
 .publish {
   clear: both;
   background: #30416a;
@@ -295,13 +437,13 @@ header .menu a {
   width: 100%;
   font-family: "Patua One", cursive;
 }
-/* line 162, ../sass/style.sass */
+/* line 252, ../sass/style.sass */
 .publish p {
   color: white;
   font-size: 26px;
   text-shadow: 0 1px 0 black;
 }
-/* line 166, ../sass/style.sass */
+/* line 256, ../sass/style.sass */
 .publish p a {
   background: #c0ff00;
   color: black;
@@ -319,7 +461,7 @@ header .menu a {
 }
 
 /*************************************** footer *************************************** */
-/* line 176, ../sass/style.sass */
+/* line 266, ../sass/style.sass */
 footer {
   height: 70px;
   padding: 30px 0;
@@ -334,7 +476,7 @@ footer {
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
 }
-/* line 180, ../sass/style.sass */
+/* line 270, ../sass/style.sass */
 footer .sparkit {
   color: white;
   text-shadow: 0 1px 0 black;
