@@ -26,7 +26,7 @@ USE_TZ = True   ##S3
 ROOT_URLCONF = 'urls'
 WSGI_APPLICATION = 'wsgi.application'
 
-
+HONEYPOT_FIELD_NAME = 'myname'
 STATICFILES_DIRS = ( PATH.local('static'), )
 TEMPLATE_DIRS = ( PATH.local('templates') )
 FIXTURE_DIRS = ( PATH.local('static'), )
