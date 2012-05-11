@@ -88,12 +88,14 @@ INSTALLED_APPS = (
     'envelope',
     'social_auth',
     'taggit',
+    'honeypot',
 
 
     'core',
     'address',
     'internships',
     'social_user',
+
 
 )
 
