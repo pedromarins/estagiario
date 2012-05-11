@@ -8,7 +8,10 @@ urlpatterns = patterns('',
     
     url(r'^$', 'core.views.index', name='index'),
     
+    #url(r'^area/(?P<area_slug>\S+)$', 'views.view_area', name='view_area'),                        
+    url(r'^publicar-vaga/$',      'internships.views.add_internship',       name='add_internship'),   
     url(r'^contato/$',      'core.views.contato',       name='envelope-contact'),   
+    
     url(r'', include('social_auth.urls')),
     
     url(r'^admin/', include(admin.site.urls)),

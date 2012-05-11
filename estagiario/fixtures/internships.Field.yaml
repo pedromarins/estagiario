@@ -1,3 +1,24 @@
-- fields: {name: Engenharia}
+- fields: {name: "Administra\xE7\xE3o", slug: administracao}
   model: internships.field
   pk: 1
+- fields: {name: Direito, slug: direito}
+  model: internships.field
+  pk: 2
+- fields: {name: Engenharia, slug: engenharia}
+  model: internships.field
+  pk: 3
+- fields: {name: Economia, slug: economia}
+  model: internships.field
+  pk: 4
+- fields: {name: "Inform\xE1tica", slug: informatica}
+  model: internships.field
+  pk: 5
+- fields: {name: Design, slug: design}
+  model: internships.field
+  pk: 6
+- fields: {name: Publicidade, slug: publicidade}
+  model: internships.field
+  pk: 7
+- fields: {name: Outros, slug: outros}
+  model: internships.field
+  pk: 8
