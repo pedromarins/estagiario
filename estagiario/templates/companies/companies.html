@@ -1,0 +1,30 @@
+{% extends "util/base.html" %}
+
+
+{% block main %}
+<div class="centered companies">
+    <h2>Antes de anunciar sua vaga gratuitamente, veja as ofertas que temos para você:</h2>
+    <div class="upgrade upgrade-first">
+        <h3>Relatórios de mercado</h3>
+        <hr></hr>
+        <img class="img" src="{{ STATIC_URL }}" />
+        <a href="#FIXME"><img src="{{ STATIC_URL }}images/up-arrow.png" />Upgrade</a>
+        <p>Relatórios completos da realidade atual do mercado. Saiba que tipo de vagas os universitários estão procurando com mais frequência, os filtros mais usados, e tenha informações para anunciar sua vaga e obter um retorno com maior eficácia.</p>
+    </div>
+    <div class="upgrade">
+        <h3>Analytics Completo</h3>
+        <hr></hr>
+        <img class="img" src="{{ STATIC_URL }}" />
+        <a href="#FIXME"><img src="{{ STATIC_URL }}images/up-arrow.png" />Upgrade</a>
+        <p>Tenha estatísticas de quantos acessos e cliques sua vaga anunciada obteve. Receba o feedback dos interessados e tenha real noção do alcance da sua vaga!</p>
+    </div>
+    <hr></hr>
+    <h2>Anuncie sua vaga, gratuitamente:</h2>
+
+</div>
+{% endblock main %}
+
+
+{% block body_bottom_js %}
+    {{ block.super }}    
+{% endblock body_bottom_js %}

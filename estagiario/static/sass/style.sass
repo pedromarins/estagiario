@@ -13,6 +13,16 @@ $azul: #3A63AC
 @mixin patua
 	font-family: 'Patua One', cursive
 
+@mixin botao-verde
+	font-size: 26px
+	background: $verde
+	color: #000000
+	padding: 8px 30px
+	margin: 0 0 0 20px
+	+border-radius(10px)
+	+box-shadow(4px 4px 0 0 #000000)
+	+text-shadow(0 1px 0 #FFFFFF)
+
 /**************************************** body ****************************************/
 html
 
@@ -235,6 +245,45 @@ header
 						@include patua
 			li:hover
 				+box-shadow(0px 0px 10px -1px #000000)
+
+.companies
+	min-height: 150px
+	font-size: 12px
+	h2
+		@include patua
+		color: $azul
+		font-size: 27px
+		margin: 40px 0
+		+text-shadow(2px 2px 1px #FFFFFF)
+	hr
+		border-top: 2px solid #b7B7B7
+		border-bottom: 2px solid #F1F2F1
+	.upgrade
+		float: left
+		margin: 0 0 50px
+		width: 470px
+		h3
+			color: #535353
+			font-weight: bold
+			font-size: 18px
+			+text-shadow(2px 2px 1px #FFFFFF)
+		.img
+			display: block
+			background: #535353
+			height: 140px
+			width: 470px
+			margin: 20px 0 25px
+		p
+			width: 275px
+		a
+			@include botao-verde
+			float: right
+			img
+				margin: 0 10px 4px 0
+				line-height: 28px
+	.upgrade-first
+		margin: 0 40px 0 0
+
 			
 
 
@@ -254,13 +303,7 @@ header
 		font-size: 26px
 		+text-shadow(0 1px 0 #000000)
 		a
-			background: $verde
-			color: #000000
-			padding: 8px 30px
-			margin: 0 0 0 20px
-			+border-radius(10px)
-			+box-shadow(4px 4px 0 0 #000000)
-			+text-shadow(0 1px 0 #FFFFFF)
+			@include botao-verde
 
 /**************************************** footer ****************************************/
 footer
