@@ -17,6 +17,7 @@ class Internship(TimeStampedModel):
     field           = models.ForeignKey('internships.Field')
     description     = models.TextField('Descrição')
     tags            = TaggableManager()
+    slug            = models.SlugField(blank=True)
 
     company_name    = models.CharField('Empresa', max_length=64)
     company_url     = models.URLField('Site')

@@ -1,0 +1,3 @@
+- fields: {name: Engenharia}
+  model: internships.field
+  pk: 1
