@@ -4,6 +4,8 @@ from envelope.views import ContactView
 
 @render_to('index.html')
 def index(request):
+    #print request.user.is_authenticated()
+    
     return locals()
 
 ENVELOPE_VIEW = {

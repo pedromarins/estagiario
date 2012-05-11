@@ -70,6 +70,7 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
+AUTH_PROFILE_MODULE = 'social_user.UserProfile'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -91,7 +92,9 @@ INSTALLED_APPS = (
 
     'core',
     'address',
-    'internships'
+    'internships',
+    'social_user',
+
 )
 
 
