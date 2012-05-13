@@ -83,7 +83,7 @@ INSTALLED_APPS = (
 
     'gunicorn',
     'newrelic',
-    #'south',
+    'south',
     'django_extensions',
     'envelope',
     'social_auth',

@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -376,43 +376,68 @@ header .menu a {
   margin: 0 10px 10px 0;
   padding: 15px 0;
   width: 226px;
+  height: 210px;
   -webkit-box-shadow: 0px 0px 10px -4px black;
   -moz-box-shadow: 0px 0px 10px -4px black;
   box-shadow: 0px 0px 10px -4px black;
 }
-/* line 220, ../sass/style.sass */
+/* line 221, ../sass/style.sass */
 .content section .vacancies li a {
   text-decoration: none;
 }
-/* line 222, ../sass/style.sass */
+/* line 223, ../sass/style.sass */
 .content section .vacancies li img {
   padding: 0 15px 5px;
 }
-/* line 224, ../sass/style.sass */
+/* line 225, ../sass/style.sass */
 .content section .vacancies li h3 {
   border-top: 1px solid #d1d0d1;
   color: #3a63ac;
   padding: 12px 15px 4px;
   width: 196px;
 }
-/* line 229, ../sass/style.sass */
+/* line 230, ../sass/style.sass */
 .content section .vacancies li .company {
   color: #757575;
-  padding: 0 15px 15px;
+  padding: 0 15px 5px;
 }
-/* line 232, ../sass/style.sass */
+/* line 233, ../sass/style.sass */
 .content section .vacancies li p {
   color: black;
   padding: 0 15px 5px;
 }
-/* line 235, ../sass/style.sass */
+/* line 238, ../sass/style.sass */
+.content section .vacancies li .location {
+  color: #757575;
+  padding: 0 15px 5px;
+  width: 100px;
+}
+/* line 242, ../sass/style.sass */
+.content section .vacancies li p {
+  color: black;
+  padding: 0 15px 0;
+  margin-top: 0;
+}
+/* line 247, ../sass/style.sass */
+.content section .vacancies li .tags {
+  color: #757575;
+  padding: 0 15px 15px;
+  width: 100px;
+}
+/* line 251, ../sass/style.sass */
+.content section .vacancies li p {
+  color: black;
+  padding: 0 15px 5px;
+  margin-top: 0;
+}
+/* line 256, ../sass/style.sass */
 .content section .vacancies li .money-time {
   color: #757575;
   float: left;
   margin: 10px 0 0;
   width: 83px;
 }
-/* line 240, ../sass/style.sass */
+/* line 261, ../sass/style.sass */
 .content section .vacancies li .money-time span {
   color: #3a63ac;
   display: block;
@@ -420,19 +445,19 @@ header .menu a {
   margin: 3px 0 0;
   font-family: "Patua One", cursive;
 }
-/* line 246, ../sass/style.sass */
+/* line 267, ../sass/style.sass */
 .content section .vacancies li:hover {
   -webkit-box-shadow: 0px 0px 10px -1px black;
   -moz-box-shadow: 0px 0px 10px -1px black;
   box-shadow: 0px 0px 10px -1px black;
 }
 
-/* line 249, ../sass/style.sass */
+/* line 270, ../sass/style.sass */
 .companies {
   min-height: 150px;
   font-size: 12px;
 }
-/* line 252, ../sass/style.sass */
+/* line 273, ../sass/style.sass */
 .companies h2 {
   font-family: "Patua One", cursive;
   color: #3a63ac;
@@ -440,25 +465,25 @@ header .menu a {
   margin: 40px 0;
   text-shadow: 2px 2px 1px white;
 }
-/* line 258, ../sass/style.sass */
+/* line 279, ../sass/style.sass */
 .companies hr {
   border-top: 2px solid #b7b7b7;
   border-bottom: 2px solid #f1f2f1;
 }
-/* line 261, ../sass/style.sass */
+/* line 282, ../sass/style.sass */
 .companies .upgrade {
   float: left;
   margin: 0 0 50px;
   width: 470px;
 }
-/* line 265, ../sass/style.sass */
+/* line 286, ../sass/style.sass */
 .companies .upgrade h3 {
   color: #535353;
   font-weight: bold;
   font-size: 18px;
   text-shadow: 2px 2px 1px white;
 }
-/* line 270, ../sass/style.sass */
+/* line 291, ../sass/style.sass */
 .companies .upgrade .img {
   display: block;
   background: #535353;
@@ -466,11 +491,11 @@ header .menu a {
   width: 470px;
   margin: 20px 0 25px;
 }
-/* line 276, ../sass/style.sass */
+/* line 297, ../sass/style.sass */
 .companies .upgrade p {
   width: 275px;
 }
-/* line 278, ../sass/style.sass */
+/* line 299, ../sass/style.sass */
 .companies .upgrade a {
   font-size: 26px;
   background: #c0ff00;
@@ -488,18 +513,18 @@ header .menu a {
   text-shadow: 0 1px 0 white;
   float: right;
 }
-/* line 281, ../sass/style.sass */
+/* line 302, ../sass/style.sass */
 .companies .upgrade a img {
   margin: 0 10px 4px 0;
   line-height: 28px;
 }
-/* line 284, ../sass/style.sass */
+/* line 305, ../sass/style.sass */
 .companies .upgrade-first {
   margin: 0 40px 0 0;
 }
 
 /*************************************** publish *************************************** */
-/* line 294, ../sass/style.sass */
+/* line 315, ../sass/style.sass */
 .publish {
   clear: both;
   background: #30416a;
@@ -508,13 +533,13 @@ header .menu a {
   width: 100%;
   font-family: "Patua One", cursive;
 }
-/* line 301, ../sass/style.sass */
+/* line 322, ../sass/style.sass */
 .publish p {
   color: white;
   font-size: 26px;
   text-shadow: 0 1px 0 black;
 }
-/* line 305, ../sass/style.sass */
+/* line 326, ../sass/style.sass */
 .publish p a {
   font-size: 26px;
   background: #c0ff00;
@@ -533,7 +558,7 @@ header .menu a {
 }
 
 /*************************************** footer *************************************** */
-/* line 309, ../sass/style.sass */
+/* line 330, ../sass/style.sass */
 footer {
   height: 70px;
   padding: 30px 0;
@@ -548,11 +573,16 @@ footer {
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
 }
-/* line 313, ../sass/style.sass */
+/* line 334, ../sass/style.sass */
 footer .sparkit {
   color: white;
   text-shadow: 0 1px 0 black;
   float: right;
   text-align: center;
   font-size: 14px;
+}
+
+/* line 342, ../sass/style.sass */
+.active a {
+  color: red;
 }

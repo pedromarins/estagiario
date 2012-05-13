@@ -31,3 +31,7 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.associate_user',
     'social_user.pipeline.populate_user_profile',
 )
+
+
+# Number of search results shown to anonymous users 
+ANON_RESULTS_COUNT = 6

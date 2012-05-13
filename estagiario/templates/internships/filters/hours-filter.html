@@ -1,0 +1,7 @@
+<ul id="hours-filter" class="hours-filter">
+    {% for opt in hours_filter.get_options %}
+        <li class="{{opt.active_class}}">
+            <a href="#" data-val="{{opt.val}}" data-param="{{hours_filter.Meta.get_param}}">{{opt.label}}</a>
+        </li>
+    {% endfor %}        
+</ul>
