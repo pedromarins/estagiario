@@ -250,47 +250,51 @@ header .menu a {
   cursor: pointer;
   text-shadow: -1px -1px 0px black;
 }
-/* line 139, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
+.fields a.active {
+  font-weight: bold;
+}
+/* line 143, ../sass/style.sass */
 .fields li:hover a {
   color: #c0ff00;
   text-decoration: none;
 }
 
 /*************************************** content *************************************** */
-/* line 144, ../sass/style.sass */
+/* line 148, ../sass/style.sass */
 .content {
   padding: 50px 0;
   min-height: 150px;
   font-size: 12px;
 }
-/* line 148, ../sass/style.sass */
+/* line 152, ../sass/style.sass */
 .content aside {
   width: 240px;
   float: left;
   margin: 0 0 50px;
 }
-/* line 152, ../sass/style.sass */
+/* line 156, ../sass/style.sass */
 .content aside h3 {
   font-family: "Patua One", cursive;
   color: #3a63ac;
   font-size: 18px;
 }
-/* line 156, ../sass/style.sass */
+/* line 160, ../sass/style.sass */
 .content aside ul {
   margin: 10px 0 40px 10px;
 }
-/* line 158, ../sass/style.sass */
+/* line 162, ../sass/style.sass */
 .content aside li {
   margin: 0 0 3px;
   font-weight: bold;
 }
-/* line 161, ../sass/style.sass */
+/* line 165, ../sass/style.sass */
 .content section {
   width: 700px;
   float: right;
   margin: 0 0 50px;
 }
-/* line 166, ../sass/style.sass */
+/* line 170, ../sass/style.sass */
 .content section .filters-orders .save-filters {
   background: #989898;
   color: white;
@@ -310,7 +314,7 @@ header .menu a {
   -moz-box-shadow: 1px 1px 0 0 black;
   box-shadow: 1px 1px 0 0 black;
 }
-/* line 178, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 .content section .filters-orders .selected-filters {
   background: #d1d0d1;
   color: black;
@@ -324,12 +328,12 @@ header .menu a {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 186, ../sass/style.sass */
+/* line 190, ../sass/style.sass */
 .content section .filters-orders .selected-filters p {
   float: left;
   margin: 0 10px 0 0;
 }
-/* line 189, ../sass/style.sass */
+/* line 193, ../sass/style.sass */
 .content section .filters-orders .selected-filters li {
   background: #3a63ac;
   color: white;
@@ -342,12 +346,12 @@ header .menu a {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 196, ../sass/style.sass */
+/* line 200, ../sass/style.sass */
 .content section .filters-orders .selected-filters li a {
   color: black;
   margin: 0 0 0 6px;
 }
-/* line 199, ../sass/style.sass */
+/* line 203, ../sass/style.sass */
 .content section .filters-orders nav {
   border-bottom: 4px solid #3a63ac;
   display: inline-block;
@@ -355,21 +359,21 @@ header .menu a {
   padding: 0 0 4px;
   width: 100%;
 }
-/* line 205, ../sass/style.sass */
+/* line 209, ../sass/style.sass */
 .content section .filters-orders nav li {
   float: left;
   list-style: none;
   margin: 0 50px 0 0;
 }
-/* line 209, ../sass/style.sass */
+/* line 213, ../sass/style.sass */
 .content section .filters-orders nav li a {
   color: black;
 }
-/* line 211, ../sass/style.sass */
+/* line 215, ../sass/style.sass */
 .content section .vacancies {
   width: 710px;
 }
-/* line 213, ../sass/style.sass */
+/* line 217, ../sass/style.sass */
 .content section .vacancies li {
   background: white;
   float: left;
@@ -381,63 +385,63 @@ header .menu a {
   -moz-box-shadow: 0px 0px 10px -4px black;
   box-shadow: 0px 0px 10px -4px black;
 }
-/* line 221, ../sass/style.sass */
+/* line 225, ../sass/style.sass */
 .content section .vacancies li a {
   text-decoration: none;
 }
-/* line 223, ../sass/style.sass */
+/* line 227, ../sass/style.sass */
 .content section .vacancies li img {
   padding: 0 15px 5px;
 }
-/* line 225, ../sass/style.sass */
+/* line 229, ../sass/style.sass */
 .content section .vacancies li h3 {
   border-top: 1px solid #d1d0d1;
   color: #3a63ac;
   padding: 12px 15px 4px;
   width: 196px;
 }
-/* line 230, ../sass/style.sass */
+/* line 234, ../sass/style.sass */
 .content section .vacancies li .company {
   color: #757575;
   padding: 0 15px 5px;
 }
-/* line 233, ../sass/style.sass */
+/* line 237, ../sass/style.sass */
 .content section .vacancies li p {
   color: black;
   padding: 0 15px 5px;
 }
-/* line 238, ../sass/style.sass */
+/* line 242, ../sass/style.sass */
 .content section .vacancies li .location {
   color: #757575;
   padding: 0 15px 5px;
   width: 100px;
 }
-/* line 242, ../sass/style.sass */
+/* line 246, ../sass/style.sass */
 .content section .vacancies li p {
   color: black;
   padding: 0 15px 0;
   margin-top: 0;
 }
-/* line 247, ../sass/style.sass */
+/* line 251, ../sass/style.sass */
 .content section .vacancies li .tags {
   color: #757575;
   padding: 0 15px 15px;
   width: 100px;
 }
-/* line 251, ../sass/style.sass */
+/* line 255, ../sass/style.sass */
 .content section .vacancies li p {
   color: black;
   padding: 0 15px 5px;
   margin-top: 0;
 }
-/* line 256, ../sass/style.sass */
+/* line 260, ../sass/style.sass */
 .content section .vacancies li .money-time {
   color: #757575;
   float: left;
   margin: 10px 0 0;
   width: 83px;
 }
-/* line 261, ../sass/style.sass */
+/* line 265, ../sass/style.sass */
 .content section .vacancies li .money-time span {
   color: #3a63ac;
   display: block;
@@ -445,19 +449,19 @@ header .menu a {
   margin: 3px 0 0;
   font-family: "Patua One", cursive;
 }
-/* line 267, ../sass/style.sass */
+/* line 271, ../sass/style.sass */
 .content section .vacancies li:hover {
   -webkit-box-shadow: 0px 0px 10px -1px black;
   -moz-box-shadow: 0px 0px 10px -1px black;
   box-shadow: 0px 0px 10px -1px black;
 }
 
-/* line 270, ../sass/style.sass */
+/* line 274, ../sass/style.sass */
 .companies {
   min-height: 150px;
   font-size: 12px;
 }
-/* line 273, ../sass/style.sass */
+/* line 277, ../sass/style.sass */
 .companies h2 {
   font-family: "Patua One", cursive;
   color: #3a63ac;
@@ -465,25 +469,25 @@ header .menu a {
   margin: 40px 0;
   text-shadow: 2px 2px 1px white;
 }
-/* line 279, ../sass/style.sass */
+/* line 283, ../sass/style.sass */
 .companies hr {
   border-top: 2px solid #b7b7b7;
   border-bottom: 2px solid #f1f2f1;
 }
-/* line 282, ../sass/style.sass */
+/* line 286, ../sass/style.sass */
 .companies .upgrade {
   float: left;
   margin: 0 0 50px;
   width: 470px;
 }
-/* line 286, ../sass/style.sass */
+/* line 290, ../sass/style.sass */
 .companies .upgrade h3 {
   color: #535353;
   font-weight: bold;
   font-size: 18px;
   text-shadow: 2px 2px 1px white;
 }
-/* line 291, ../sass/style.sass */
+/* line 295, ../sass/style.sass */
 .companies .upgrade .img {
   display: block;
   background: #535353;
@@ -491,11 +495,11 @@ header .menu a {
   width: 470px;
   margin: 20px 0 25px;
 }
-/* line 297, ../sass/style.sass */
+/* line 301, ../sass/style.sass */
 .companies .upgrade p {
   width: 275px;
 }
-/* line 299, ../sass/style.sass */
+/* line 303, ../sass/style.sass */
 .companies .upgrade a {
   font-size: 26px;
   background: #c0ff00;
@@ -513,18 +517,18 @@ header .menu a {
   text-shadow: 0 1px 0 white;
   float: right;
 }
-/* line 302, ../sass/style.sass */
+/* line 306, ../sass/style.sass */
 .companies .upgrade a img {
   margin: 0 10px 4px 0;
   line-height: 28px;
 }
-/* line 305, ../sass/style.sass */
+/* line 309, ../sass/style.sass */
 .companies .upgrade-first {
   margin: 0 40px 0 0;
 }
 
 /*************************************** publish *************************************** */
-/* line 315, ../sass/style.sass */
+/* line 319, ../sass/style.sass */
 .publish {
   clear: both;
   background: #30416a;
@@ -533,13 +537,13 @@ header .menu a {
   width: 100%;
   font-family: "Patua One", cursive;
 }
-/* line 322, ../sass/style.sass */
+/* line 326, ../sass/style.sass */
 .publish p {
   color: white;
   font-size: 26px;
   text-shadow: 0 1px 0 black;
 }
-/* line 326, ../sass/style.sass */
+/* line 330, ../sass/style.sass */
 .publish p a {
   font-size: 26px;
   background: #c0ff00;
@@ -558,7 +562,7 @@ header .menu a {
 }
 
 /*************************************** footer *************************************** */
-/* line 330, ../sass/style.sass */
+/* line 334, ../sass/style.sass */
 footer {
   height: 70px;
   padding: 30px 0;
@@ -573,7 +577,7 @@ footer {
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
 }
-/* line 334, ../sass/style.sass */
+/* line 338, ../sass/style.sass */
 footer .sparkit {
   color: white;
   text-shadow: 0 1px 0 black;
@@ -582,7 +586,7 @@ footer .sparkit {
   font-size: 14px;
 }
 
-/* line 342, ../sass/style.sass */
+/* line 346, ../sass/style.sass */
 .active a {
   color: red;
 }

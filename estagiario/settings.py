@@ -89,8 +89,10 @@ INSTALLED_APPS = (
     'social_auth',
     'taggit',
     'honeypot',
+    'floppyforms',
 
-
+    'django_tools',
+    
     'core',
     'address',
     'internships',

@@ -1,15 +1,17 @@
-var get_params = function(){
-    var _url_params = {};
-    var e,
-        a = /\+/g,  // Regex for replacing addition symbol with a space
-        r = /([^&=]+)=?([^&]*)/g,
-        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
-        q = window.location.search.substring(1);
 
-    while (e = r.exec(q))
-       _url_params[d(e[1])] = d(e[2]);
-   return _url_params;
-};
+
+// var get_params = function(){
+//     var _url_params = {};
+//     var e,
+//         a = /\+/g,  // Regex for replacing addition symbol with a space
+//         r = /([^&=]+)=?([^&]*)/g,
+//         d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+//         q = window.location.search.substring(1);
+
+//     while (e = r.exec(q))
+//        _url_params[d(e[1])] = d(e[2]);
+//    return _url_params;
+// };
 
 var redirect_to_params = function(params){
     window.location.href = '?' + jQuery.param(params);
@@ -26,8 +28,12 @@ var start_filter = function(container){
             var key = $(this).attr('data-param');
             
             if (!val){
-                delete params[key];    
-                redirect_to_params(params);
+                //delete params[key];    
+                //redirect_to_params(params);
+                alert('asd');
+                var $url = new UrlManager(1);
+                $url.del_param(key);
+                return $url.redirect();
             }            
             
 
@@ -62,11 +68,37 @@ var start_filter = function(container){
 
 
 
+
 $(document).ready(function() {
 
-    start_filter('#state-filter a');
+    start_filter('#tag-filter a');
+    $('#id-state-select').change(function() {
+        //alert($(this).attr('value'));
+        //window.location.href = '/' + $(this).attr('value') + '/';
 
+        //var params = get_params();
+        //params['uf'] = $(this).attr('value');
+        //redirect_to_params(params);
+        var $url = new UrlManager();
+        return $url.redirect({'uf': $(this).attr('value')});
+    
+
+    });
+    
     start_filter('#hours-filter a');
+    start_filter('#city-filter a');
+    start_filter('#size-filter a');
+    
+    $("a.field-link").click(function(){
+        //alert($(this).attr("href"));
+        return
+    });
+
+    // path_redirect({'uf': 'rj'});
+    // path_redirect({'uf': 'rj', 'field': 'direito'});
+    // path_redirect({'field': 'direito'});
+
+
 
 // Example querystring:
 

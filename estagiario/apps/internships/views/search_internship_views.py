@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
-from django.shortcuts import redirect
+
 from annoying.decorators import render_to
-from forms import InternshipForm
+
 from address.models import State
 from internships.models import Internship
 from taggit.models import Tag
-
+from internships.models import Field
+from django.http import HttpResponseNotFound
 
 # def get_ordered_tags():
 #     sorted_tags = []
@@ -68,7 +69,22 @@ from taggit.models import Tag
     
 #     def options(self):
 #         return self._parse_options(self._options())
-from filters import TagFilter, WeekHoursFilter, StateSelector
+
+from filters import TagFilter, WeekHoursFilter, StateSelector, CityFilter,CompanySizeFilter
+from libs.freegeoip import get_geoip_data
+IP = '189.106.171.205'
+#
+def set_default_state(request, state_sel):
+    if request.path in ['/', '/estagios/']:
+        if not state_sel.get_state():
+            data = get_geoip_data(IP)
+            if data.get('region_name'):
+                state_sel.val = State.objects.get(name=data['region_name']).uf
+    return state_sel
+
+
+
+
 
 
 @render_to('index.html')
@@ -91,7 +107,16 @@ def list_internships(request, state_uf=None, field_slug=None):
         - salary
         - dt_created
     """
-    results = Internship.objects.all()
+    
+    results = Internship.objects.available()
+    if field_slug:
+        field = Field.objects.filter(slug__iexact=field_slug)
+        field = field[0] if len(field) else None    
+        if field:
+            results = results.filter(field=field)
+    
+
+    #print request.Meta['HTTP_REFERER']
     
     #path_prefix = request.path.split('/')[1]
     #uf = None
@@ -99,7 +124,13 @@ def list_internships(request, state_uf=None, field_slug=None):
     #    uf = path_prefix
     
     state_selector = StateSelector(request, state_uf)
+    #state_selector = set_default_state(request, state_selector)
     results = state_selector.parse_query(results)
+
+
+    city_filter = CityFilter(request)
+    city_filter.set_state(state_selector.get_state())
+    results = city_filter.parse_query(results)
     
     tag_filter = TagFilter(request)
     results = tag_filter.parse_query(results)
@@ -107,7 +138,11 @@ def list_internships(request, state_uf=None, field_slug=None):
     hours_filter = WeekHoursFilter(request)
     results = hours_filter.parse_query(results)
     
-    print hours_filter.get_options()
+    size_filter = CompanySizeFilter(request)
+    results = size_filter.parse_query(results)
+
+
+
 
     #ins = state_filter.parse_queryset(ins)
     return locals()
@@ -115,19 +150,13 @@ def list_internships(request, state_uf=None, field_slug=None):
 
 @render_to('index.html')
 def show_internship(request, state_uf=None, ins_slug=None):
-    """ auto_now_add=    """
-    return locals()
+    """ Internship details """    
+    if ins_slug is not None:        
+        ins = Internship.objects.filter(slug__iexact=ins_slug)
+        if len(ins):
+            return {'internship': ins[0]}
+    return HttpResponseNotFound()
+
+    
 
 
-@render_to('add_internship.html')
-def add_internship(request):
-    "Publishes a new internship opening"
-    form = InternshipForm(request.POST or None)
-    #print form.as_ul()
-    #print form
-
-    if form.is_valid():
-        ins = form.save()
-        return redirect(ins)
-        
-    return locals()

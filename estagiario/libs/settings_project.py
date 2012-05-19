@@ -35,3 +35,8 @@ SOCIAL_AUTH_PIPELINE = (
 
 # Number of search results shown to anonymous users 
 ANON_RESULTS_COUNT = 6
+
+
+CSS = {
+    'field_menu_active': 'active',
+}

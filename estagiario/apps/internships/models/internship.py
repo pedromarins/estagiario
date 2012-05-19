@@ -7,6 +7,7 @@ from taggit.managers import TaggableManager
 from address.models import BRAddressModel
 from internship_queryset import InternShipQuerySet
 from model_utils.managers import PassThroughManager
+
 NEGOTIABLE_CHOICES = Choices(
     (-1, 'not_informed',    u'Não informar'), 
     ( 0, 'no',              u'Não'), 
@@ -28,7 +29,7 @@ class Internship(TimeStampedModel, BRAddressModel):
     tags            = TaggableManager()
 
     company_name    = models.CharField('Empresa', max_length=64)
-    company_url     = models.URLField('Site')
+    company_url     = models.URLField('Site', blank=True)
     company_img     = models.ImageField('Logo', upload_to='company_logos', null=True)
     company_size    = models.CharField(choices=COMPANY_SIZES, default=COMPANY_SIZES.peq, max_length=5)
 
@@ -45,11 +46,12 @@ class Internship(TimeStampedModel, BRAddressModel):
     # relevance index
     relevance       = models.IntegerField(default=-1)
     # Paid for top positions
-    featured        = models.IntegerField(blank=True) 
+    featured        = models.BooleanField(default=False) 
     # Date internship will be removed from public site
     expiration      = models.DateField('Data de expiração')
 
-    approved = models.BooleanField()
+    
+    approved = models.BooleanField() # if False, should never be displayed
     active = models.BooleanField(default=True)
 
     objects = PassThroughManager.for_queryset_class(InternShipQuerySet)()

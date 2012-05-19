@@ -1,8 +1,29 @@
 # -*- coding: utf-8 -*-
-from django.forms import ModelForm
+#from django.forms import ModelForm
 from models import Internship
 
-class InternshipForm(ModelForm):
+import floppyforms as forms
+
+
+# class DatePicker(forms.DateInput):
+#     template_name = 'datepicker.html'
+
+#     class Media:
+#         js = (
+#             'js/jquery.min.js',
+#             'js/jquery-ui.min.js',
+#         )
+#         css = {
+#             'all': (
+#                 'css/jquery-ui.css',
+#             )
+#         }
+
+
+# class DateForm(forms.Form):
+#     date = forms.DateField(widget=DatePicker)
+    
+class InternshipForm(forms.ModelForm):
     class Meta:
         model = Internship
         fields = (

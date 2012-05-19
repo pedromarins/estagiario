@@ -1,7 +1,7 @@
-<ul id="state-filter" class="state-filter">
-    {% for opt in state_filter.options %}
+<ul id="city-filter" class="city-filter">
+    {% for opt in city_filter.get_options %}
         <li class="{{opt.active_class}}">
-            <a href="#" data-val="{{opt.val}}" data-param="{{opt.GET_PARAM}}">{{opt.label}}</a>
+            <a href="#" data-val="{{opt.val}}" data-param="{{city_filter.Meta.get_param}}">{{opt.label}}</a>
         </li>
     {% endfor %}        
 </ul>

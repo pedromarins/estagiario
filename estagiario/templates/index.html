@@ -4,26 +4,30 @@
 {% block main %}
 <div class="centered content">
    	<aside>
-   		
+   		<form>
       <h3>Estado</h3>
       {% include "internships/filters/state-filter.html" %}
+</form>
+      {% if city_filter.state %}
+         <h3>Cidade</h3>
+         {% include "internships/filters/city-filter.html" %}
+      {% endif %}
       
       <h3>Tag</h3>
       {% include "internships/filters/tag-filter.html" %}
+      
       <h3>Carga Horária</h3>
       {% include "internships/filters/hours-filter.html" %}
       
-      {% comment %}
-      <h3>Cidade</h3>
-      {% include "internships/filters/city-filter.html" %}
+            <h3>Tamanho da empresa</h3>
+      {% include "internships/filters/company-filter.html" %}
 
-      
+
+      {% comment %}
       
       <h3>Semestre mínimo</h3>
       {% include "internships/filters/semester-filter.html" %}
       
-      <h3>Tamanho da empresa</h3>
-      {% include "internships/filters/company-filter.html" %}
 
 
       <h3>Benefícios</h3>

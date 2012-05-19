@@ -1,9 +1,1 @@
 {{state_selector.render|safe}}
-
-<ul id="state-filter" class="state-filter">
-    {% for opt in state_filter.options %}
-        <li class="{{opt.active_class}}">
-            <a href="#" data-val="{{opt.val}}" data-param="{{opt.GET_PARAM}}">{{opt.label}}</a>
-        </li>
-    {% endfor %}        
-</ul>

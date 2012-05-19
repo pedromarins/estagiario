@@ -43,3 +43,6 @@ nose_exclude.txt
 **/static/.sass-cache/
 
 db.sqlite
+
+
+**/chromedriver.log

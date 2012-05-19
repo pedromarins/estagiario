@@ -1,24 +1,26 @@
+{% load menu_tags %}
+
 <header>
 	<div class="centered">
 		<a class="fb-login" href="{% url socialauth_begin 'facebook' %}">Conectar com o Facebook</a>
-		<h1><a href="">estagiar.io - direto ao ponto</a></h1>
+		<h1><a href="/">estagiar.io - direto ao ponto</a></h1>
 		<nav class="menu">
-			<li><a href="#FIXME">ANUNCIE SUA VAGA</a></li>
+			<li><a href="{% url add_internship %}">ANUNCIE SUA VAGA</a></li>
 			<li><a href="#FIXME">DIREITOS DO ESTAGIÁRIO</a></li>
-			<li><a href="#FIXME">CONTATO</a></li>
+			<li><a href="{% url envelope_contact %}">CONTATO</a></li>
 		</nav>
 	</div>
 
 </header>
 <nav class="fields">
 	<ul class="centered">
-		<li><a href="#FIXME"><span class="engenharia"></span>ENGENHARIA</a></li>
-		<li><a href="#FIXME"><span class="direito"></span>DIREITO</a></li>
-		<li><a href="#FIXME"><span class="administracao"></span>ADMINISTRAÇÃO</a></li>
-		<li><a href="#FIXME"><span class="economia"></span>ECONOMIA</a></li>
-		<li><a href="#FIXME"><span class="programacao"></span>PROGRAMAÇÃO</a></li>
-		<li><a href="#FIXME"><span class="design"></span>DESIGN</a></li>
-		<li><a href="#FIXME"><span class="publicidade"></span>PUBLICIDADE</a></li>
-		<li><a href="#FIXME"><span class="outros"></span>OUTROS</a></li>
+		<li><a href="/engenharia/" class="field-link {% active_field request 'engenharia' %}"><span class="engenharia"></span>ENGENHARIA</a></li>
+		<li><a href="/direito/" class="field-link {% active_field request 'direito' %}"><span class="direito"></span>DIREITO</a></li>
+		<li><a href="/administracao/" class="field-link {% active_field request 'administracao' %}"><span class="administracao"></span>ADMINISTRAÇÃO</a></li>
+		<li><a href="/economia/" class="field-link {% active_field request 'economia' %}"><span class="economia"></span>ECONOMIA</a></li>
+		<li><a href="/informatica/" class="field-link {% active_field request 'informatica' %}"><span class="informatica"></span>INFORMÁTICA</a></li>
+		<li><a href="/design/" class="field-link {% active_field request 'design' %}"><span class="design"></span>DESIGN</a></li>
+		<li><a href="/publicidade/" class="field-link {% active_field request 'publicidade' %}"><span class="publicidade"></span>PUBLICIDADE</a></li>
+		<li><a href="/outros/" class="field-link {% active_field request 'outros' %}"><span class="outros"></span>OUTROS</a></li>
 	</ul>
 </nav>
