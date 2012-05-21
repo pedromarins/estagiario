@@ -23,3 +23,4 @@ fandjango==4.0.6
 requests==0.8.9
 django-taggit==0.9.3
 django-autoslug==1.5.0
+django-floppyforms==0.4.7

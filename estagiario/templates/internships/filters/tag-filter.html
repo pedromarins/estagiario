@@ -1,0 +1,8 @@
+<ul id="tag-filter" class="tag-filter">
+
+    {% for opt in tag_filter.get_options %}
+        <li class="{{opt.active_class}}">
+            <a href="#" data-val="{{opt.val}}" data-param="{{tag_filter.Meta.get_param}}">{{opt.label}}</a>
+        </li>
+    {% endfor %}        
+</ul>

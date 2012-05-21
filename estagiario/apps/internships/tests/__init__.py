@@ -1,0 +1,2 @@
+from test_views import IndexTest, DetailInternshipTest
+#from test_models import InternshipQuerysetTest

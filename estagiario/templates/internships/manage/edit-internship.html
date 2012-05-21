@@ -1,0 +1,141 @@
+{% extends "util/base.html" %}
+{% load form_tags %}
+
+    
+{% block head_css %}
+    {{ block.super }}    
+    {#<!-- css for structure -->#}
+    <link rel="stylesheet" href="{{STATIC_URL}}css/formee-structure.css" type="text/css" media="screen" />      
+    {#<!-- css for style -->#}
+    <link rel="stylesheet" href="{{STATIC_URL}}css/formee-style.css" type="text/css" media="screen" />
+{% endblock %}
+
+
+{% block main %}
+   
+<form class="formee" mehtod="POST" style="padding: 20px;">
+   {% csrf_token %}
+
+    <fieldset>
+        <legend>Empresa</legend>
+        
+        <div class="grid-3-12">
+            <label>{{form.company_name.label}} <em class="formee-req">*</em></label>
+            {{form.company_name}}
+        </div>
+    
+        <div class="grid-3-12">
+
+            <label>{{form.company_url.label}} <em class="formee-req">*</em></label>
+            {{form.company_url}}
+        </div>
+
+      <div class="grid-3-12">
+            <label>{{form.company_size.label}} </label>
+            {{form.company_size}}
+        </div>
+    
+        <div class="grid-3-12">
+
+            <label>{{form.company_img.label}} </label>
+            {{form.company_img}}
+        </div>
+    
+
+
+
+
+
+
+
+
+    </fieldset>
+
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+               <textarea rows="" cols=""></textarea>
+        </div>
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+               <input type="text" class="formee-small" value="Fill up the field">
+               <input type="text" class="formee-medium" value="Fill up the field">
+               <input type="submit" title="send" value="send">
+        </div>
+    
+
+   {{form.as_ul}}
+           <div class="grid-12-12">
+               <input class="right" type="submit" title="Publicar" value="Publicar">
+        </div>
+
+</form>
+
+{% endblock main %}
+
+
+{% block js %}
+    {{ block.super }}    
+    {#<!-- jquery for equal height elements -->#}
+    <script type="text/javascript" src="{{STATIC_URL}}js/formee.js"></script>
+{% endblock %}
+
+
+
+{% block body_bottom_js %}
+    {{ block.super }}    
+{% endblock body_bottom_js %}
+
+
+
+
+
+
+
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+               <input type="text" class="formee-small" value="Fill up the field">
+                <select class="formee-small">
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                </select>
+        </div>
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+                <select class="formee-small">
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                </select>
+                <select class="formee-small">
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                </select>
+               <input type="submit" title="send" value="send">
+               <input type="submit" title="send" value="send">
+               <input type="submit" title="send" value="send">
+        </div>
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+               <input type="file" class="formee-small" value="Fill up the field">
+        </div>
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+                <ul class="formee-list">
+                    <li><input name="checkbox-01" type="checkbox"> <label>Option 01</label></li>
+                    <li><input name="checkbox-01" type="checkbox"> <label>Option 02</label></li>
+                    <li><input name="checkbox-01" type="checkbox"> <label>Option 03</label></li>
+                    <li><input name="checkbox-01" type="checkbox"> <label>Option 04</label></li>
+                </ul>
+        </div>
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+                <ul class="formee-list">
+                    <li><input name="radio-01" type="radio"><label>Option 01</label></li>
+                    <li><input name="radio-01" type="radio"><label>Option 02</label></li>
+                    <li><input name="radio-01" type="radio"><label>Option 03</label></li>
+                    <li><input name="radio-01" type="radio"><label>Option 04</label></li>
+                </ul>
+        </div>
+    </fieldset>

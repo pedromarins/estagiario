@@ -4,128 +4,45 @@
 {% block main %}
 <div class="centered content">
    	<aside>
-   		<h3>Localização</h3>
-   		<ul>
-   			<li>Rio de Janeiro</li>
-   			<li>São Paulo</li>
-   			<li>Minas Gerais</li>
-   			<li>Brasilia</li>
-   			<li>Recife</li>
-   		</ul>
-   		<h3>Área de atuação</h3>
-   		<ul>
-   			<li>Rio de Janeiro</li>
-   			<li>São Paulo</li>
-   			<li>Minas Gerais</li>
-   			<li>Brasilia</li>
-   			<li>Recife</li>
-   		</ul>
-   		<h3>Tipo de empresa</h3>
-   		<ul>
-   			<li>Rio de Janeiro</li>
-   			<li>São Paulo</li>
-   			<li>Minas Gerais</li>
-   			<li>Brasilia</li>
-   			<li>Recife</li>
-   		</ul>
+   		<form>
+      <h3>Estado</h3>
+      {% include "internships/filters/state-filter.html" %}
+</form>
+      {% if city_filter.state %}
+         <h3>Cidade</h3>
+         {% include "internships/filters/city-filter.html" %}
+      {% endif %}
+      
+      <h3>Tag</h3>
+      {% include "internships/filters/tag-filter.html" %}
+      
+      <h3>Carga Horária</h3>
+      {% include "internships/filters/hours-filter.html" %}
+      
+            <h3>Tamanho da empresa</h3>
+      {% include "internships/filters/company-filter.html" %}
+
+
+      {% comment %}
+      
+      <h3>Semestre mínimo</h3>
+      {% include "internships/filters/semester-filter.html" %}
+      
+
+
+      <h3>Benefícios</h3>
+      {% include "internships/filters/benefits-filter.html" %}
+    {% endcomment %}
    	</aside>
    	<section>
-         <div class="filters-orders">
-            <a href="#FIXME" class="save-filters">Salvar fitro</a>
-            <div class="selected-filters">
-               <p>Você está usando os seguintes filtros:</p>
-               <ul>
-                    <li>Niterói<a href="#FIXME">X</a></li>
-                    <li>Web<a href="#FIXME">X</a></li>
-               </ul>
-            </div>
-            <nav>
-                <li><strong>Ordenar por:</strong></li>
-                <li><a href="#FIXME">Relevância</a></li>
-                <li><a href="#FIXME">Salário</a></li>
-                <li><a href="#FIXME">Carga Horária</a></li>
-                <li><a href="#FIXME">Data de Inclusão</a></li>
-                <li><a href="#FIXME">Período</a></li>
-            </nav>
-         </div>
+        {% include "internships/ordering.html" %}
          <ul class="vacancies">
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="#FIXME">
-                    <img src="{{ STATIC_URL }}images/logo-vale.png" />
-                    <h3>Designer de Interfaces</h3>
-                    <p class="company">SparkIT - Web and mobile apps</p>
-                    <p><strong>Descrição:</strong></p>
-                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
-                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
-                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
-                </a>
-            </li>
+
+            {% for ins in results %}
+              
+              {% include "internships/internship-box.html" %}
+            {% endfor %}
+
          </ul>
    	</section>
 </div>

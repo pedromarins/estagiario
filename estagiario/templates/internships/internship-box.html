@@ -1,0 +1,43 @@
+
+
+<li>
+    <a href="#FIXME">
+
+    
+    <img src="{{MEDIA_URL}}{{ins.company_img}}" height="42px" />
+    <h3>Designer de Interfaces</h3>
+    
+    <p class="company">
+        SparkIT - Web and mobile apps  <br/>
+        {{ins.city.name}}/{{ins.state.uf.upper}}
+         {% for tag in ins.tags.all %}
+            <a href="">{{tag}}</a>
+        {% endfor %}
+    </p>
+ 
+ 
+    <p><strong>Descrição:</strong></p>
+
+    <p>{{ins.description|truncatewords:15}}</p>
+
+    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
+    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
+</a>
+</li>
+
+
+
+      {% comment %}
+    <img src="{{ STATIC_URL }}images/logo-vale.png" />
+            <li>
+                <a href="#FIXME">
+
+                    <h3>Designer de Interfaces</h3>
+                    <p class="company">SparkIT - Web and mobile apps</p>
+                    <p><strong>Descrição:</strong></p>
+                    <p>Bacon ipsum dolor sit amet swine strip steak frankfurter chicken, rump turkey venison kielbasa bacon pork chop filet mignon shank ham salami pork belly.</p>
+                    <p class="money-time">Salário<br/><span>R$ 800,00</span></p>
+                    <p class="money-time">Carga Horária<br/><span>20h/sem.</span></p>
+                </a>
+            </li>
+            {% endcomment %}
