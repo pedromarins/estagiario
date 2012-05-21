@@ -1,0 +1,9 @@
+- fields: {name: Minas Gerais, uf: mg}
+  model: address.state
+  pk: 1
+- fields: {name: "S\xE3o Paulo", uf: sp}
+  model: address.state
+  pk: 2
+- fields: {name: Rio de Janeiro, uf: rj}
+  model: address.state
+  pk: 3

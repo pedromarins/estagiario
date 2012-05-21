@@ -7,3 +7,6 @@ from city_filter import *
 from tag_filter import *
 from week_filter import *
 from size_filter import *
+from field_filter import *
+
+from filter_manager import *

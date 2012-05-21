@@ -8,6 +8,57 @@ from internships.models import Internship
 from taggit.models import Tag
 from internships.models import Field
 from django.http import HttpResponseNotFound
+#from internships.filters import TagFilter, WeekHoursFilter, StateSelector, CityFilter,CompanySizeFilter
+from internships.filters import InternshipSearch
+
+@render_to('index.html')
+def list_internships(request, state_uf=None, field_slug=None):
+    """
+    List/Search internships available
+    + results are limited to <settings.ANON_RESULTS_COUNT> for anonymous users
+    
+    - Filter:
+        - state 
+        - city 
+        - area 
+        - company_size
+        - tags
+        - weekly hours
+        - semester
+    
+    - Order:
+        - relevance
+        - salary
+        - dt_created
+    """
+    
+    
+    #print request.Meta['HTTP_REFERER']
+    #path_prefix = request.path.split('/')[1]
+    #uf = None
+    #if len(path_prefix) == 2:
+    #    uf = path_prefix
+    
+    results = InternshipSearch(request, state_uf=state_uf, field_slug=field_slug)
+    
+    return locals()
+
+
+@render_to('index.html')
+def show_internship(request, state_uf=None, ins_slug=None):
+    """ Internship details """    
+    if ins_slug is not None:        
+        ins = Internship.objects.filter(slug__iexact=ins_slug)
+        if len(ins):
+            return {'internship': ins[0]}
+    return HttpResponseNotFound()
+
+    
+
+
+
+
+
 
 # def get_ordered_tags():
 #     sorted_tags = []
@@ -70,7 +121,6 @@ from django.http import HttpResponseNotFound
 #     def options(self):
 #         return self._parse_options(self._options())
 
-from filters import TagFilter, WeekHoursFilter, StateSelector, CityFilter,CompanySizeFilter
 from libs.freegeoip import get_geoip_data
 IP = '189.106.171.205'
 #
@@ -85,78 +135,5 @@ def set_default_state(request, state_sel):
 
 
 
-
-
-@render_to('index.html')
-def list_internships(request, state_uf=None, field_slug=None):
-    """
-    List/Search internships available
-    + results are limited to <settings.ANON_RESULTS_COUNT> for anonymous users
-    
-    - Filter:
-        - state 
-        - city 
-        - area 
-        - company_size
-        - tags
-        - weekly hours
-        - semester
-    
-    - Order:
-        - relevance
-        - salary
-        - dt_created
-    """
-    
-    results = Internship.objects.available()
-    if field_slug:
-        field = Field.objects.filter(slug__iexact=field_slug)
-        field = field[0] if len(field) else None    
-        if field:
-            results = results.filter(field=field)
-    
-
-    #print request.Meta['HTTP_REFERER']
-    
-    #path_prefix = request.path.split('/')[1]
-    #uf = None
-    #if len(path_prefix) == 2:
-    #    uf = path_prefix
-    
-    state_selector = StateSelector(request, state_uf)
-    #state_selector = set_default_state(request, state_selector)
-    results = state_selector.parse_query(results)
-
-
-    city_filter = CityFilter(request)
-    city_filter.set_state(state_selector.get_state())
-    results = city_filter.parse_query(results)
-    
-    tag_filter = TagFilter(request)
-    results = tag_filter.parse_query(results)
-
-    hours_filter = WeekHoursFilter(request)
-    results = hours_filter.parse_query(results)
-    
-    size_filter = CompanySizeFilter(request)
-    results = size_filter.parse_query(results)
-
-
-
-
-    #ins = state_filter.parse_queryset(ins)
-    return locals()
-
-
-@render_to('index.html')
-def show_internship(request, state_uf=None, ins_slug=None):
-    """ Internship details """    
-    if ins_slug is not None:        
-        ins = Internship.objects.filter(slug__iexact=ins_slug)
-        if len(ins):
-            return {'internship': ins[0]}
-    return HttpResponseNotFound()
-
-    
 
 

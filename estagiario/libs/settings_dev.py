@@ -63,3 +63,7 @@ DATABASES = {
 # Estagiar.io Teste
 FACEBOOK_APP_ID = '397248523631923'
 FACEBOOK_API_SECRET = 'fcc8abf3f2ff4819b13846bccec20f55'
+
+
+
+#>>> from django.contrib.gis.db.backends.mysql

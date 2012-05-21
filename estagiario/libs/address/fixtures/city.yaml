@@ -1,0 +1,33 @@
+- fields: {name: Belo Horizonte, state: 1}
+  model: address.city
+  pk: 1
+- fields: {name: "Uberl\xE2ndia", state: 1}
+  model: address.city
+  pk: 2
+- fields: {name: Contagem, state: 1}
+  model: address.city
+  pk: 3
+- fields: {name: Juiz de Fora, state: 1}
+  model: address.city
+  pk: 4
+- fields: {name: "S\xE3o Paulo", state: 2}
+  model: address.city
+  pk: 5
+- fields: {name: Guarulhos, state: 2}
+  model: address.city
+  pk: 6
+- fields: {name: Campinas, state: 2}
+  model: address.city
+  pk: 7
+- fields: {name: "S\xE3o Bernardo do Campo", state: 2}
+  model: address.city
+  pk: 8
+- fields: {name: Rio de Janeiro, state: 3}
+  model: address.city
+  pk: 9
+- fields: {name: "S\xE3o Gon\xE7alo", state: 3}
+  model: address.city
+  pk: 10
+- fields: {name: "Niter\xF3i", state: 3}
+  model: address.city
+  pk: 11

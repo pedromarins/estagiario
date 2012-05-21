@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
 import factory
-from factories import StateFactory, FieldFactory, InternshipFactory, fill_company, fill_address, fill_tags
+from factories import StateFactory, FieldFactory, create_internship
 
 factory.Factory.default_strategy = factory.CREATE_STRATEGY
 
-def create_internship(company_key, address_key, **kwargs):
-    ins = InternshipFactory.build()
-    fill_company(ins, company_key)
-    fill_address(ins, address_key)
-    ins.save()
-    ins = fill_tags(ins, *kwargs.get('tags',[]) )
-    return ins
 
 def run():
     StateFactory.make_for_test()

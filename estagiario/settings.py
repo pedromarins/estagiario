@@ -97,6 +97,7 @@ INSTALLED_APPS = (
     'address',
     'internships',
     'social_user',
+    'user_searches',
 
 
 )
