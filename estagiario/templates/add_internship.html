@@ -2,12 +2,169 @@
 
 
 {% block main %}
-   
-<form mehtod="POST">
-   {% csrf_token %}
-   {{form.as_ul}}
-   <input type="submit" value="Publicar" />
-</form>
+<div class="centered companies">
+    <h2>Antes de anunciar sua vaga gratuitamente, veja as ofertas que temos para você:</h2>
+    <div class="upgrade upgrade-first">
+        <h3>Relatórios de mercado</h3>
+        <hr></hr>
+        <img class="img" src="{{ STATIC_URL }}" />
+        <a href="#FIXME"><img src="{{ STATIC_URL }}images/up-arrow.png" />Upgrade</a>
+        <p>Relatórios completos da realidade atual do mercado. Saiba que tipo de vagas os universitários estão procurando com mais frequência, os filtros mais usados, e tenha informações para anunciar sua vaga e obter um retorno com maior eficácia.</p>
+    </div>
+    <div class="upgrade">
+        <h3>Analytics Completo</h3>
+        <hr></hr>
+        <img class="img" src="{{ STATIC_URL }}" />
+        <a href="#FIXME"><img src="{{ STATIC_URL }}images/up-arrow.png" />Upgrade</a>
+        <p>Tenha estatísticas de quantos acessos e cliques sua vaga anunciada obteve. Receba o feedback dos interessados e tenha real noção do alcance da sua vaga!</p>
+    </div>
+    <hr></hr>
+    <h2>Anuncie sua vaga, gratuitamente:</h2>
+
+	<form mehtod="POST">
+	   	{% csrf_token %}
+	   	<h3>Dados da empresa</h3>
+	   	<li class="three">
+			<label for="id_company_name">Nome da Empresa</label>
+			{% for error in form.company_name.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.company_name}}
+		</li>
+
+		<li class="three">
+			<label for="id_company_url">Link da vaga <span>(opcional)</span></label>
+			{% for error in form.company_url.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.company_url}}
+		</li>
+
+		<li class="three">
+			<label for="id_company_size">Company size</label>
+			{% for error in form.company_size.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.company_size}}
+		</li>
+
+		<li class="three">
+			<label for="id_company_img">Logo</label>
+			{% for error in form.company_img.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.company_img}}
+		</li>
+
+
+		<li class="one">
+			<label for="id_state">State</label>
+			{% for error in form.state.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.state}}
+		</li>
+
+		<li class="two">
+			<label for="id_city">City</label>
+			{% for error in form.city.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.city}}
+		</li>
+		
+		<li class="two">
+			<label for="id_district">Bairro</label>
+			{% for error in form.district.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.district}}
+		</li>
+
+		<li class="two">
+			<label for="id_cep">CEP</label>
+			{% for error in form.cep.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.cep}}
+		</li>
+
+		<li class="five">
+			<label for="id_street">Rua</label>
+			{% for error in form.street.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.street}}
+		</li>
+
+	   	
+	   	<h3>Dados da vaga</h3>
+
+
+	   	<li class="four">
+	   		<label for="id_role">Cargo</label>
+	   		{% for error in form.role.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.role}}
+	   	</li>
+
+		<li class="two">
+			<label for="id_field">Área</label>
+			{% for error in form.field.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.field}}
+		</li>
+
+		<li class="two">
+			<label for="id_weekly_hours">Carga horária</label>
+			{% for error in form.weekly_hours.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.weekly_hours}}
+		</li>
+
+		<li class="two">
+			<label for="id_salary">Salário</label>
+			{% for error in form.salary.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.salary}}
+		</li>
+
+		<li class="two">
+			<label for="id_expiration">Validade da vaga</label>
+			{% for error in form.expiration.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.expiration}}
+		</li>
+
+		<li class="four tags">
+			<label for="id_tags">Tags da vaga</label>
+			<p>(insira aqui a área de atuação da vaga ex: Engenharia Química, Direito Cívil, Programação Back-End, Design Editorial, Marketing digital, etc)</p>
+			{% for error in form.tags.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.tags}}
+		</li>
+
+		<li class="six">
+			<label for="id_description">Descrição</label>
+			{% for error in form.description.errors %}
+				<div class="errorlist">{{ error }}</div>
+			{% endfor %}
+			{{form.description}}
+		</li>
+		
+	   <li class="two">
+	   		<label>Termos de Uso</label>
+	   		<p>Ao clicar em "Anunciar" você concorda em divulgar a sua vaga em Estagiar.io.</p>
+			<input class="add" type="submit" value="Anunciar!" />
+		</li>
+	</form>
+</div>
 
 {% endblock main %}
 

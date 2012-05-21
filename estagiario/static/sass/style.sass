@@ -283,6 +283,96 @@ header
 				line-height: 28px
 	.upgrade-first
 		margin: 0 40px 0 0
+	form
+		display: inline-block
+		margin: 0 10px 50px
+		width: 980px
+		h3
+			@include patua
+			color: $azul
+			font-size: 18px
+			+text-shadow(2px 2px 1px #FFFFFF)
+			margin: 10px 0 30px 
+			float: left
+			width: 100%
+		li
+			margin: 0 20px 20px 0
+			display: inline-block
+			float: left
+			label
+				font-weight: bold
+				display: block
+				margin: 0 0 8px
+				span
+					font-weight: normal
+			input, select, textarea
+				background: #FFFFFF
+				border: none
+				height: 35px
+				margin: 0
+				+box-shadow(0px 0px 10px -3px #000000)
+
+		li.one
+			width: 60px
+			label, select
+				width: 60px
+			input
+				padding: 0 10px
+				width: 40px
+
+		li.two
+			width: 140px
+			label, select
+				width: 140px
+			input 
+				padding: 0 10px
+				width: 120px
+			input.add
+				@include botao-verde
+				cursor: pointer
+				font-size: 20px
+				padding: 8px 20px
+				margin: 20px 0 0
+				width: 136px
+
+		li.three
+			width: 220px
+			label, select
+				width: 220px
+			input
+				padding: 0 10px
+				width: 200px
+
+		li.four
+			width: 300px
+			label, select
+				width: 300px
+			input
+				padding: 0 10px
+				width: 280px
+
+		li.five
+			width: 380px
+			label, select
+				width: 380px
+			input
+				padding: 0 10px
+				width: 360px
+
+		li.six
+			width: 460px
+			label
+				width: 460px
+			textarea
+				height: 180px
+				padding: 0 10px
+				width: 440px
+
+		li.tags
+			p
+				margin: 0 0 20px
+			input
+				height: 125px
 
 			
 

@@ -497,9 +497,160 @@ header .menu a {
 .companies .upgrade-first {
   margin: 0 40px 0 0;
 }
+/* line 286, ../sass/style.sass */
+.companies form {
+  display: inline-block;
+  margin: 0 10px 50px;
+  width: 980px;
+}
+/* line 290, ../sass/style.sass */
+.companies form h3 {
+  font-family: "Patua One", cursive;
+  color: #3a63ac;
+  font-size: 18px;
+  text-shadow: 2px 2px 1px white;
+  margin: 10px 0 30px;
+  float: left;
+  width: 100%;
+}
+/* line 298, ../sass/style.sass */
+.companies form li {
+  margin: 0 20px 20px 0;
+  display: inline-block;
+  float: left;
+}
+/* line 302, ../sass/style.sass */
+.companies form li label {
+  font-weight: bold;
+  display: block;
+  margin: 0 0 8px;
+}
+/* line 306, ../sass/style.sass */
+.companies form li label span {
+  font-weight: normal;
+}
+/* line 308, ../sass/style.sass */
+.companies form li input, .companies form li select, .companies form li textarea {
+  background: white;
+  border: none;
+  height: 35px;
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 10px -3px black;
+  -moz-box-shadow: 0px 0px 10px -3px black;
+  box-shadow: 0px 0px 10px -3px black;
+}
+/* line 315, ../sass/style.sass */
+.companies form li.one {
+  width: 60px;
+}
+/* line 317, ../sass/style.sass */
+.companies form li.one label, .companies form li.one select {
+  width: 60px;
+}
+/* line 319, ../sass/style.sass */
+.companies form li.one input {
+  padding: 0 10px;
+  width: 40px;
+}
+/* line 323, ../sass/style.sass */
+.companies form li.two {
+  width: 140px;
+}
+/* line 325, ../sass/style.sass */
+.companies form li.two label, .companies form li.two select {
+  width: 140px;
+}
+/* line 327, ../sass/style.sass */
+.companies form li.two input {
+  padding: 0 10px;
+  width: 120px;
+}
+/* line 330, ../sass/style.sass */
+.companies form li.two input.add {
+  font-size: 26px;
+  background: #c0ff00;
+  color: black;
+  padding: 8px 30px;
+  margin: 0 0 0 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 0 0 black;
+  -moz-box-shadow: 4px 4px 0 0 black;
+  box-shadow: 4px 4px 0 0 black;
+  text-shadow: 0 1px 0 white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 20px;
+  margin: 20px 0 0;
+  width: 136px;
+}
+/* line 338, ../sass/style.sass */
+.companies form li.three {
+  width: 220px;
+}
+/* line 340, ../sass/style.sass */
+.companies form li.three label, .companies form li.three select {
+  width: 220px;
+}
+/* line 342, ../sass/style.sass */
+.companies form li.three input {
+  padding: 0 10px;
+  width: 200px;
+}
+/* line 346, ../sass/style.sass */
+.companies form li.four {
+  width: 300px;
+}
+/* line 348, ../sass/style.sass */
+.companies form li.four label, .companies form li.four select {
+  width: 300px;
+}
+/* line 350, ../sass/style.sass */
+.companies form li.four input {
+  padding: 0 10px;
+  width: 280px;
+}
+/* line 354, ../sass/style.sass */
+.companies form li.five {
+  width: 380px;
+}
+/* line 356, ../sass/style.sass */
+.companies form li.five label, .companies form li.five select {
+  width: 380px;
+}
+/* line 358, ../sass/style.sass */
+.companies form li.five input {
+  padding: 0 10px;
+  width: 360px;
+}
+/* line 362, ../sass/style.sass */
+.companies form li.six {
+  width: 460px;
+}
+/* line 364, ../sass/style.sass */
+.companies form li.six label {
+  width: 460px;
+}
+/* line 366, ../sass/style.sass */
+.companies form li.six textarea {
+  height: 180px;
+  padding: 0 10px;
+  width: 440px;
+}
+/* line 372, ../sass/style.sass */
+.companies form li.tags p {
+  margin: 0 0 20px;
+}
+/* line 374, ../sass/style.sass */
+.companies form li.tags input {
+  height: 125px;
+}
 
 /*************************************** publish *************************************** */
-/* line 294, ../sass/style.sass */
+/* line 384, ../sass/style.sass */
 .publish {
   clear: both;
   background: #30416a;
@@ -508,13 +659,13 @@ header .menu a {
   width: 100%;
   font-family: "Patua One", cursive;
 }
-/* line 301, ../sass/style.sass */
+/* line 391, ../sass/style.sass */
 .publish p {
   color: white;
   font-size: 26px;
   text-shadow: 0 1px 0 black;
 }
-/* line 305, ../sass/style.sass */
+/* line 395, ../sass/style.sass */
 .publish p a {
   font-size: 26px;
   background: #c0ff00;
@@ -533,7 +684,7 @@ header .menu a {
 }
 
 /*************************************** footer *************************************** */
-/* line 309, ../sass/style.sass */
+/* line 399, ../sass/style.sass */
 footer {
   height: 70px;
   padding: 30px 0;
@@ -548,7 +699,7 @@ footer {
   -moz-box-shadow: 0px -1px 20px -4px black;
   box-shadow: 0px -1px 20px -4px black;
 }
-/* line 313, ../sass/style.sass */
+/* line 403, ../sass/style.sass */
 footer .sparkit {
   color: white;
   text-shadow: 0 1px 0 black;

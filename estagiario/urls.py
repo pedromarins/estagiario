@@ -12,7 +12,6 @@ urlpatterns = patterns('',
     #url(r'^area/(?P<area_slug>\S+)$', 'views.view_area', name='view_area'),                        
     url(r'^publicar-vaga/$',      'internships.views.add_internship',       name='add_internship'),   
     url(r'^contato/$',      'core.views.contato',       name='envelope-contact'),   
-    url( r'^anunciar-vaga/$', direct_to_template, { 'template': 'companies/companies.html' }),
     
     url(r'', include('social_auth.urls')),
     
