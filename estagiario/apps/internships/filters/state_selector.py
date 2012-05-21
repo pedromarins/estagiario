@@ -24,16 +24,13 @@ class StateSelector(object):
 
     def parse_query(self, qset):
         if self.val:
-            qset.filter(state__uf=self.val)
+            return qset.filter(state__uf=self.val)
         return qset
             
     
     def render(self):
         se = Select(choices=self.options)
-        print 'self.options'
-        print self.options
         name = 'stateselect'
         return se.render('stateselect', self.val, attrs={'id':'id-state-select'})
-
 
 

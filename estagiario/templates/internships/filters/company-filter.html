@@ -1,7 +1,7 @@
 <ul id="size-filter" class="size-filter">
-    {% for opt in size_filter.get_options %}
+    {% for opt in results.size_filter.get_options %}
         <li class="{{opt.active_class}}">
-            <a href="#" data-val="{{opt.val}}" data-param="{{size_filter.Meta.get_param}}">{{opt.label}}</a>
+            <a href="#" data-val="{{opt.val}}" data-param="{{results.size_filter.Meta.get_param}}">{{opt.label}}</a>
         </li>
     {% endfor %}        
 </ul>
